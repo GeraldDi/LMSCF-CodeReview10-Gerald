@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Mrz 2020 um 14:44
+-- Erstellungszeit: 24. Mrz 2020 um 14:35
 -- Server-Version: 10.4.11-MariaDB
 -- PHP-Version: 7.4.3
 
@@ -53,12 +53,12 @@ CREATE TABLE `media` (
 INSERT INTO `media` (`id`, `title`, `image`, `author_firstname`, `author_lastname`, `ISBN`, `short_description`, `publish_date`, `type`, `publisher_name`, `publisher_address`, `publisher_size`, `status`) VALUES
 (1, 'Test1', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author 1', 'lastname 1', 12345, 'A great book about stuff', '2020-03-03', 'book', 'publisher a', 'street 1', 'big', 0),
 (2, 'test2', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author 2', 'lastname 2', 23456, 'Another nice book about stuff', '2020-03-01', 'book', 'publisher_name', 'street 2', 'medium', 1),
-(3, 'test_cd1', 'https://media.gettyimages.com/photos/-picture-id184597525?b=1&k=6&m=184597525&s=612x612&w=0&h=cMtmjW3pFoI05V-iZ9zYdTw9kr', 'author 3', 'lastname 3', 34567, 'Great CD', '2019-03-03', 'cd', 'publisher 3', 'street 3 ', 'big', 1),
-(4, 'test_cd2', 'https://media.gettyimages.com/photos/-picture-id184597525?b=1&k=6&m=184597525&s=612x612&w=0&h=cMtmjW3pFoI05V-iZ9zYdTw9kr', 'author 3', 'lastname 3', 34568, 'Another great CD', '2020-03-04', 'cd', 'publisher 3', 'street 3', 'big', 0),
+(3, 'test_cd1', 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CD_autolev_crop.jpg', 'author 3', 'lastname 3', 34567, 'Great CD', '2019-03-03', 'cd', 'publisher 3', 'street 3 ', 'big', 1),
+(4, 'test_cd2', 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CD_autolev_crop.jpg', 'author 3', 'lastname 3', 34568, 'Another great CD', '2020-03-04', 'cd', 'publisher 3', 'street 3', 'big', 0),
 (5, 'test4', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author 4', 'lastname 4', 67890, 'An interesting book about stuff', '2020-03-15', 'book', 'publisher 2', 'street 2', 'medium', 0),
 (6, 'test5', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author4', 'lastname 4', 78901, 'Another interesting book about stuff', '2017-06-30', 'book', 'publisher 4', 'street b', 'small', 0),
-(7, 'dvd1', 'https://www.nierle.com/de/artikel/4786/DVD-R_4,7_GB_Intenso_16x_Speed_in_Cakebox_100_Stk.html', 'author 5', 'lastname 5', 343434, 'A great dvd', '2020-03-02', 'dvd', 'publisher m', 'address m', 'big', 0),
-(8, 'dvd2', 'https://www.nierle.com/de/artikel/4786/DVD-R_4,7_GB_Intenso_16x_Speed_in_Cakebox_100_Stk.html', 'author 5', 'lastname 5', 878787, 'An exciting dvd', '2020-02-03', 'dvd', 'publisher_name', 'address m', 'big', 0),
+(7, 'dvd1', 'https://www.nierle.com/pic/5577b.jpg', 'author 5', 'lastname 5', 343434, 'A great dvd', '2020-03-02', 'dvd', 'publisher m', 'address m', 'big', 0),
+(8, 'dvd2', 'https://www.nierle.com/pic/5577b.jpg', 'author 5', 'lastname 5', 878787, 'An exciting dvd', '2020-02-03', 'dvd', 'publisher_name', 'address m', 'big', 0),
 (9, 'test6', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author k', 'lastname k', 567765, 'Another exciting thriller', '2019-12-17', 'book', 'publisher a', 'street 1', 'big', 0),
 (10, 'test7', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author k', 'lastname k', 789987, 'Great story', '2020-03-17', 'book', 'publisher 2', 'street 2', 'medium', 0),
 (11, 'ctest1', 'https://images-na.ssl-images-amazon.com/images/I/61-uFOBDLDL.jpg', 'author n1', 'lastname n2', 111222, 'goog short description', '2020-01-01', 'book', 'publisher n1', 'street n1', 'medium', 0),

@@ -61,7 +61,7 @@
                 while($row = $result->fetch_assoc()) {
                    echo  "<tr>
                        <td>" .$row['title']."</td>
-                       <td>" .$row['image']."</td>
+                       <td><img width=20% src =" .$row['image']."></td>
                        <td>" .$row['author_firstname']."</td>
                        <td>" .$row['author_lastname']."</td>
                        <td>" .$row['ISBN']."</td>
