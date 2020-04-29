@@ -34,7 +34,7 @@
        <thead>
            <tr>
                <th>Title</th>
-               <th style="width: 20%">Image</th>
+               <th style="width: 50%">Image</th>
                <th>Author firstname</th>
                <th>Author lastname</th>
                <th>ISBN</th>
@@ -51,7 +51,9 @@
        <tbody>
 
             <?php
-           $sql = "SELECT * FROM media WHERE type = 'dvd'";
+            
+            $itype=$_GET["type"];
+           $sql = "SELECT * FROM media WHERE type = '$itype'";
            $result = $connect->query($sql);
 
             if($result->num_rows > 0) {

@@ -29,10 +29,10 @@
 <div class ="manageBooks text-center ">
   <div class="h1 text-center m-2 text-white">List of all media</div>
    <a href= "create.php"><button type="button" class="ml-5 bg-success">Add new media</button></a>
-<!--    Because my list on index.php already has almost all the data for the single types of media, I copied all this functionality to seperate pages instead of only showing the data on the subpages -->
-   <a href= "index_books.php"><button type="button" class="ml-5 bg-primary">Show only media books</button></a>
-   <a href= "index_cds.php"><button type="button" class="ml-5 bg-primary">Show only media CDs</button></a>
-   <a href= "index_dvds.php"><button type="button" class="ml-5 bg-primary">Show only media DVDs</button></a>
+<!--  The type is sent in the header and then decides which type will be selected in the db  -->
+   <a href= "category.php?type=book"><button type="button" class="ml-5 bg-primary">Show only media books</button></a>
+   <a href= "category.php?type=cd"><button type="button" class="ml-5 bg-primary">Show only media CDs</button></a>
+   <a href= "category.php?type=dvd"><button type="button" class="ml-5 bg-primary">Show only media DVDs</button></a>
    <table  border="1" cellspacing= "0" cellpadding="0" class="bg-white">
        <thead >
            <tr >
@@ -61,7 +61,7 @@
                 while($row = $result->fetch_assoc()) {
                    echo  "<tr>
                        <td>" .$row['title']."</td>
-                       <td><img width=20% src =" .$row['image']."></td>
+                       <td><img width=50% src =" .$row['image']."></td>
                        <td>" .$row['author_firstname']."</td>
                        <td>" .$row['author_lastname']."</td>
                        <td>" .$row['ISBN']."</td>
@@ -81,8 +81,7 @@
                echo  "<tr><td colspan='5'><center>No Data Avaliable</center></td></tr>";
            }
             ?>
-
-           
+          
        </tbody>
    </table>
 </div>
